@@ -115,8 +115,6 @@ function proceedToPayment() {
 
 function addToCartPayment(itemId, priceId, imgId, itemQuantity) {
 
-    
-    // If item doesn't exist, create a new entry with quantity set to 1
     const item = {
         name: itemId,
         price: priceId,
