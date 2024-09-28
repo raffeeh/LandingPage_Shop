@@ -217,7 +217,21 @@ p {
 .btn-secondary:hover {
     background-color: #000;
     color: #FFF;
- }
+}
+.payment-btn {
+    background-color: #000;
+    color: #FFF;
+    margin: 10px 0 0 0;
+    width: 100%;
+    border-radius: 10px;
+}
+.payment-btn-secondary {
+    background-color: #FFF;
+    color: #000;
+    margin: 10px 0 0 0;
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* Forms */
 input.form-control {
@@ -230,3 +244,6 @@ input.form-control {
     height: 43.54px;
 }
 
+.fa-message:before {
+    content: "\f27a";
+}

@@ -1,18 +1,20 @@
 let cart = []; // Array to store cart items
 
-function addToCart(itemId, priceId) {
-    // Get item name and price from the HTML using IDs
+function addToCart(itemId, priceId, imgId) {
+    // Get item name, price, and image from the HTML using IDs
     const itemElement = document.getElementById(itemId);
     const priceElement = document.getElementById(priceId);
+    const imgElement = document.getElementById(imgId);
 
-    if (!itemElement || !priceElement) {
-        console.error('Element not found:', { itemId, priceId });
-        alert('Error: Item or price not found.');
+    if (!itemElement || !priceElement || !imgElement) {
+        console.error('Element not found:', { itemId, priceId, imgId });
+        alert('Error: Item, price, or image not found.');
         return; // Exit the function if elements are not found
     }
 
     const itemName = itemElement.innerText;
     const itemPrice = parseFloat(priceElement.innerText.replace(/[^0-9.-]+/g, "")); // Extract numeric value
+    const itemImage = imgElement.src; // Get the image source
 
     // Check if the item is already in the cart
     const existingItem = cart.find(item => item.name === itemName);
@@ -25,17 +27,29 @@ function addToCart(itemId, priceId) {
         const item = {
             name: itemName,
             price: itemPrice,
-            quantity: 1
+            quantity: 1,
+            image: itemImage // Store the image source
         };
         cart.push(item);
     }
 
     updateCartItemCount();
-    
-    // Feedback for the user
-    console.log('Added to cart:', cart);
-    alert(itemName + ' has been added to your cart. Current quantity: ' + (existingItem ? existingItem.quantity : 1));
+
+     // Show notification modal
+     const notificationMessage = `${itemName} has been added to your cart. Current quantity: ${existingItem ? existingItem.quantity : 1}`;
+     document.getElementById('notificationMessage').innerText = notificationMessage;
+     $('#notificationModal').modal('show');
+ 
+     // Hide the modal after 3 seconds
+     setTimeout(() => {
+         $('#notificationModal').modal('hide');
+     }, 3000);
+     
+     // Feedback for the user
+     console.log('Added to cart:', cart);
+
 }
+
 
 function updateCartItemCount() {
     const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
@@ -59,10 +73,20 @@ function viewCart() {
         total += subtotal;
 
         const listItem = document.createElement('li');
-        listItem.className = 'list-group-item';
+        listItem.className = 'list-group-item d-flex align-items-center';
+
         listItem.innerHTML = `
-            <strong>${item.name}</strong> - $${item.price.toFixed(2)} x ${item.quantity} = $${subtotal.toFixed(2)}
+            <div class="d-flex align-items-center">
+                <img src="${item.image}" alt="${item.name}" class="img-thumbnail" style="width: 75px; height: 100px; margin-right: 10px;">
+                <div class="ml-2">
+                    <strong>${item.name}</strong><br>
+                    <span>Quantity: ${item.quantity}</span><br>
+                    <span>Price: $${item.price.toFixed(2)}</span><br>
+                    <span>Subtotal: $${subtotal.toFixed(2)}</span>
+                </div>
+            </div>
         `;
+
         cartItemsList.appendChild(listItem);
     });
 
@@ -71,4 +95,35 @@ function viewCart() {
 
     // Show the modal
     $('#cartModal').modal('show');
+}
+
+
+function proceedToPayment() {
+    // Store the cart in session through an AJAX call
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'db/cart.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            // Redirect to payment page
+            window.location.href = 'payment.php';
+        }
+    };
+    xhr.send(JSON.stringify(cart));
+}
+
+
+function addToCartPayment(itemId, priceId, imgId, itemQuantity) {
+
+    
+    // If item doesn't exist, create a new entry with quantity set to 1
+    const item = {
+        name: itemId,
+        price: priceId,
+        quantity: itemQuantity,
+        image: imgId // Store the image source
+    };
+    cart.push(item);
+
+    updateCartItemCount();
 }
