@@ -19,7 +19,7 @@
                 <img src="resources/inspo5.png" class="img-fluid" alt="inspo5">
             </div>
         </div>
-        <div class="row justify-content-center mt-3">
+        <div class="row justify-content-center mt-4">
             <button class="btn btn-primary">VIEW ALL POSTS</button>
         </div>
     </div>

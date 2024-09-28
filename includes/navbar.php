@@ -25,7 +25,10 @@
                     <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link" onclick="viewCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartItemCount" class="badge" style="display: none;">0</span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>

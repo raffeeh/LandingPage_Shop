@@ -2,52 +2,67 @@
     <div class="container-fluid text-center">
         <h2>Recently Bought</h2>
         <div class="row justify-content-center mt-3">
-            <div class="col">
+            <div class="col items">
                 <img src="resources/winter_fashion.png" class="img-fluid" alt="Winter Fashion">
                 <div class="text-left">
-                    <p class="description">Festives Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
+                    <p class="description" id="item1">Festives Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
                     <p>
-                        <span>$38</span>
+                        <span id="price1" style="font-weight: 600;">$38</span>
                     </p>
                 </div>
+                <div class="row justify-content-center">
+                    <button class="btn btn-primary" onclick="addToCart('item1', 'price1')">ADD TO CART</button>
+                </div>
             </div>
-            <div class="col">
+            <div class="col items">
                 <img src="resources/boots.png" class="img-fluid" alt="Boots">
                 <div class="text-left">
-                    <p class="description">Chevron Flap Crossbody Bag</p>
+                    <p class="description" id="item2">Chevron Flap Crossbody Bag</p>
                     <p>
-                        <span style="color: red;">$5.77</span>
-                        <span style="text-decoration: line-through;">$7.34</span>
+                        <span id="price2" style="color: red; font-weight: 800;">$5.77</span>
+                        <span style="text-decoration: line-through; font-weight: 600;">$7.34</span>
                     </p>
                 </div>
+                <div class="row justify-content-center">
+                    <button class="btn btn-primary" onclick="addToCart('item2', 'price2')">ADD TO CART</button>
+                </div>
             </div>
-            <div class="col">
+            <div class="col items">
                 <img src="resources/nightout.png" class="img-fluid" alt="Night Out">
                 <div class="text-left">
-                    <p class="description">Manilla Tan Multi Plaid Oversized Fringe Scarf</p>
+                    <p class="description" id="item3">Manilla Tan Multi Plaid Oversized Fringe Scarf</p>
                     <p>
-                        <span style="color: red;">$29</span>
-                        <span style="text-decoration: line-through;">$39</span>
+                        <span id="price3" style="color: red; font-weight:800;">$29</span>
+                        <span style="text-decoration: line-through; font-weight: 600;">$39</span>
                     </p>
                 </div>
-            </div>
-            <div class="col">
-                <img src="resources/holidays.png" class="img-fluid" alt="Holidays">
-                <div class="text-left">
-                    <p class="description">Diamante Puff Sleeve Dress - Black</p>
-                    <p>
-                        <span>$45.99</span>
-                    </p>
+                <div class="row justify-content-center">
+                    <button class="btn btn-primary" onclick="addToCart('item3', 'price3')">ADD TO CART</button>
                 </div>
             </div>
-            <div class="col">
+            <div class="col items">
                 <img src="resources/holidays.png" class="img-fluid" alt="Holidays">
                 <div class="text-left">
-                    <p class="description">Banneth Open Front Formal Dress in Black</p>
+                    <p class="description" id="item4">Diamante Puff Sleeve Dress - Black</p>
                     <p>
-                        <span style="color: red;">$69</span>
-                        <span style="text-decoration: line-through;">$99.95</span>
+                        <span id="price4" style="font-weight: 600;">$45.99</span>
                     </p>
+                </div>
+                <div class="row justify-content-center">
+                    <button class="btn btn-primary" onclick="addToCart('item4', 'price4')">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="col items">
+                <img src="resources/holidays.png" class="img-fluid" alt="Holidays">
+                <div class="text-left">
+                    <p class="description" id="item5">Banneth Open Front Formal Dress in Black</p>
+                    <p>
+                        <span id="price5" style="color: red; font-weight: 800;">$69</span>
+                        <span style="text-decoration: line-through; font-weight: 600;">$99.95</span>
+                    </p>
+                </div>
+                <div class="row justify-content-center">
+                    <button class="btn btn-primary" onclick="ddToCart('item5', 'price5')">ADD TO CART</button>
                 </div>
             </div>
         </div>

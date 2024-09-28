@@ -13,7 +13,8 @@
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Main CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -53,6 +54,9 @@
     <!-- Footer -->
     <!-- Include the footer -->
     <?php include 'includes/footer.php'; ?>
+
+    <!-- Modal -->
+    <?php include 'includes/modal.php'; ?>
 
 </body>
 </html>
