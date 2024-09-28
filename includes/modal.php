@@ -13,7 +13,6 @@
                 <strong>Total: $<span id="totalAmount">0.00</span></strong>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" onclick="proceedToPayment()">Proceed to Payment</button>
             </div>
         </div>

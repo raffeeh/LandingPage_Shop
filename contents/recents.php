@@ -3,7 +3,7 @@
         <h2>Recently Bought</h2>
         <div class="row justify-content-center mt-3">
             <div class="col items">
-                <img src="resources/winter_fashion.png" id="image1" class="img-fluid" alt="Winter Fashion">
+                <img src="resources/item1.png" id="image1" class="img-fluid" alt="Winter Fashion">
                 <div class="text-left">
                     <p class="description" id="item1">Festives Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
                     <p>
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="col items">
-                <img src="resources/boots.png" id="image2" class="img-fluid" alt="Boots">
+                <img src="resources/item2.png" id="image2" class="img-fluid" alt="Boots">
                 <div class="text-left">
                     <p class="description" id="item2">Chevron Flap Crossbody Bag</p>
                     <p>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="col items">
-                <img src="resources/nightout.png" id="image3" class="img-fluid" alt="Night Out">
+                <img src="resources/item3.png" id="image3" class="img-fluid" alt="Night Out">
                 <div class="text-left">
                     <p class="description" id="item3">Manilla Tan Multi Plaid Oversized Fringe Scarf</p>
                     <p>
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="col items">
-                <img src="resources/holidays.png" id="image4" class="img-fluid" alt="Holidays">
+                <img src="resources/item4.png" id="image4" class="img-fluid" alt="Holidays">
                 <div class="text-left">
                     <p class="description" id="item4">Diamante Puff Sleeve Dress - Black</p>
                     <p>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col items">
-                <img src="resources/holidays.png" id="image5" class="img-fluid" alt="Holidays">
+                <img src="resources/item5.png" id="image5" class="img-fluid" alt="Holidays">
                 <div class="text-left">
                     <p class="description" id="item5">Banneth Open Front Formal Dress in Black</p>
                     <p>
