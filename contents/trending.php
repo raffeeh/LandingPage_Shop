@@ -38,5 +38,25 @@
                 <a>PARTY</a>
             </div>
         </div>
+        <div class="hashtag-row row d-flex justify-content-center align-items-center">
+            <div class="hashtags">
+                <a href="">#Thanksgiving</a>
+            </div>
+            <div class="hashtags">
+                <a href="">#NewYears</a>
+            </div>
+            <div class="hashtags">
+                <a href="">#Knitted</a>
+            </div>
+            <div class="hashtags">
+                <a href="">#Pajamas</a>
+            </div>
+            <div class="hashtags">
+                <a href="">#WFH</a>
+            </div>
+            <div class="hashtags">
+                <a href="">#FallFashion</a>
+            </div>
+        </div>
     </div>
 </div>

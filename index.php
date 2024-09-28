@@ -16,9 +16,12 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Navigation Bar -->
     <!-- Include the navbar -->
     <?php include 'includes/navbar.php'; ?>
+
+    
+    <!-- Contents -->
 
     <!-- Include the benefits contents -->
     <?php include 'contents/benefits.php'; ?>
@@ -34,6 +37,22 @@
 
     <!-- Include VIP Exclusive contents -->
     <?php include 'contents/trending.php'; ?>
+
+    <!-- Include New Arrivals contents -->
+    <?php include 'contents/new_arrivals.php'; ?>
+
+    <!-- Include Recently Bought contents -->
+    <?php include 'contents/recents.php'; ?>
+
+    <!-- Include Insta contents -->
+    <?php include 'contents/insta.php'; ?>
+
+    <!-- Include Newsletter contents -->
+    <?php include 'contents/newsletter.php'; ?>
+
+    <!-- Footer -->
+    <!-- Include the footer -->
+    <?php include 'includes/footer.php'; ?>
 
 </body>
 </html>

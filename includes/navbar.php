@@ -16,9 +16,9 @@
                 </li>
             </ul>
 
-            <span class="navbar-text mx-auto">
-                THREADED
-            </span>
+            <div class="d-flex justify-content-center mx-auto">
+                <img src="resources/logo.png" class="img-fluid" alt="Logo">
+            </div>
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
