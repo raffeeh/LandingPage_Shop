@@ -1,0 +1,33 @@
+/* This is the main CSS of the application */
+
+/*   CONTENTS   */
+/*   --------   */
+
+/* Benefits */
+
+/* Hero */
+
+/* Site-wide deals */
+
+/* VIP Exclusive */
+
+.vip-exclusive {
+    background-image: url('../resources/vip_exclusive_bg.png');
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    padding: 20px;
+}
+
+.vip-exclusive .btn-primary {
+    background-color: #FFF;
+    color: #000;
+    border-radius: unset;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Trending */
